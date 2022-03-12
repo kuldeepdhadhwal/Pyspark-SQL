@@ -1,3 +1,3 @@
 # window functions
 
-Select name, salary,department , dense_rank() over(partition by department) order by salary as salary_rank from employee where salary_rank=3;
+Select * from (Select firstname, salary,department , dense_rank() over(partition by department order by salary)  as salary_rank from employee) where salary_rank=2
