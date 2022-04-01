@@ -5,3 +5,4 @@ spark = SparkSession.builder.master('local').getOrCreate()
 sc = spark.SparkContext
 readFile = sc.textFile(r'path').flatMap(lambda x:x.split(' ')).map(lambda x:(x,1)).reduceByKey(lambda x,y:x+y)
 readFile.collect()
+
