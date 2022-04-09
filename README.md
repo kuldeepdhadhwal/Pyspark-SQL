@@ -1,2 +1,2 @@
 # Pyspark-SQL
-This repo contains pyspark and sql codes
+This repo contains pyspark and sql codes. 
