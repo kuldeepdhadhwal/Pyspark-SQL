@@ -1,0 +1,1 @@
+This is a file to read data in pyspark script for the word count.
